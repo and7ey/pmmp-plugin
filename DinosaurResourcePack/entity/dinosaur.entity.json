@@ -1,0 +1,30 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "alleva:dinosaur",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/dinosaur"
+			},
+			"geometry": {
+				"default": "geometry.dinosaur"
+			},
+			"animations": {
+				"move_controller": "controller.animation.dinosaur.move",
+                "move_to_target": "animation.dinosaur.move_to_target",
+                "move": "animation.dinosaur.move"
+            },
+			"scripts": {
+                "animate": ["move_controller"]
+            },
+			"render_controllers": ["controller.render.default"],
+			"spawn_egg": {
+				"base_color": "#1cb300",
+				"overlay_color": "#ffce00"
+			}
+		}
+	}
+}

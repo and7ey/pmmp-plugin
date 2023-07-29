@@ -1,0 +1,24 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Dinosaur Pack",
+		"description": "Dinosaur Pack Resource Pack",
+		"uuid": "a47248e6-2cf4-7158-34b3-69bc449c30b0",
+		"version": [1, 0, 0],
+		"min_engine_version": [1, 16, 0]
+	},
+	"metadata": {
+		"authors": ["alleva"],
+		"generated_with": {
+			"blockbench_entity_wizard": ["1.1.1"]
+		}
+	},
+	"modules": [
+		{
+			"description": "Dinosaur Pack",
+			"type": "resources",
+			"uuid": "cbf50d8f-0a62-1c78-92ca-1bce15073ead",
+			"version": [1, 0, 0]
+		}
+	]
+}
