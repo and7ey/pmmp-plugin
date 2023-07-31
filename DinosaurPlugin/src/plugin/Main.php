@@ -4,6 +4,7 @@ namespace plugin;
 use customiesdevs\customies\entity\CustomiesEntityFactory;
 use plugin\entity\type\DinosaurEntity;
 use plugin\command\EntityCommand;
+use pocketmine\utils\TextFormat;
 
 // use pocketmine\math\Vector3;
 use pocketmine\plugin\PluginBase;
@@ -15,7 +16,9 @@ use pocketmine\plugin\PluginBase;
 
 class Main extends PluginBase{
 
-    protected function onEnable() : void{
+    protected function onEnable() : void {
+        $this->getLogger()->info(TextFormat::DARK_GREEN . "Dinosaur Plugin has been enabled!");
+        $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
         $this->getServer()->getCommandMap()->register("", new EntityCommand());
 
         // $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
